@@ -1,6 +1,5 @@
 # Social Media Backend Engine
-
-A scalable backend microservice built using Java 17 and Spring Boot that simulates social media interactions with Redis-powered concurrency guardrails, real-time virality scoring, cooldown enforcement, and distributed notification throttling using NeonDB and Upstash Redis.
+A scalable backend microservice built using Java 17 and Spring Boot designed to handle high-volume social media interactions with Redis-powered concurrency controls, virality scoring, cooldown enforcement, and distributed notification throttling.
 
 ## Features
 
@@ -26,6 +25,21 @@ A scalable backend microservice built using Java 17 and Spring Boot that simulat
 - Maven
 - REST APIs
 
+## Project Structure
+
+```text
+src/
+├── controller/
+├── service/
+├── repository/
+├── config/
+├── scheduler/
+├── redis/
+├── dto/
+├── entity/
+└── exception/
+```
+
 ## Engineering Challenges Solved
 
 ### Concurrency Protection
@@ -47,3 +61,8 @@ Used Neon serverless PostgreSQL for scalable cloud-hosted relational database ma
 ### Upstash Redis
 Used Upstash Redis for atomic counters, cooldown locks, virality scoring, and notification throttling.
 
+## Testing
+- API Testing with Postman
+- Concurrent request testing for Redis atomic operations.
+- Validation testing for REST endpoints
+- Manual stress testing for bot interaction guardrails
