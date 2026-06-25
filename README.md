@@ -2,7 +2,7 @@
 
 A scalable backend microservice built using Java 17 and Spring Boot designed to handle high-volume social media interactions with Redis-powered concurrency controls, virality scoring, cooldown enforcement, and distributed notification throttling.
 
----
+--
 
 ## 🔥 Key Engineering Highlights
 
